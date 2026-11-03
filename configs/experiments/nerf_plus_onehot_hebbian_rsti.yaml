@@ -1,0 +1,11 @@
+base:
+  - ../data.yaml
+  - ../model_cortex.yaml
+  - ../train.yaml
+
+model:
+  position_mode: nerf_plus_onehot
+  attn_kind:     hebbian
+  rsti_sharpness:        10.0
+  rsti_init_logits_std:  1.0
+  rsti_diversity_weight: 0.01

@@ -1,0 +1,32 @@
+data:
+  dataset: cobre
+  n_classes: 2
+  bold_keys:
+    znorm: bold
+    raw:   bold_no_znorm
+  resample: false
+
+model:
+  R: 200
+  position_mode: nerf_plus_onehot
+  attn_kind: hebbian
+  head: mlp
+  mlp_head_hidden: [1024, 256]
+  rsti_sharpness: 10.0
+  rsti_init_logits_std: 1.0
+  rsti_diversity_weight: 0.01
+
+train:
+  T: 150
+  M: 20
+  lr: 1.0e-5
+  weight_decay: 1.0e-6
+  batch_size: 16
+  epochs: 60
+  prp_dropout: 0.1
+  rsti_dropout: 0.1
+  head_dropout: 0.1
+  grad_clip: 1.0
+  warmup_epochs: 10
+  min_lr_ratio: 0.05
+  num_workers: 2

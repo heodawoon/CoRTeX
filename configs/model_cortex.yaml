@@ -1,0 +1,17 @@
+model:
+  R: 360
+  position_mode: nerf_plus_onehot
+  attn_kind:     hebbian
+  head:          brainnet
+  d_attn: 64
+  nerf_n_freqs: 6
+  prp_d_hidden: 16
+  d_hidden_rsr: 1024
+  hebbian_alpha_init:    0.5
+  hebbian_rate_init_std: 0.5
+  hebbian_H_clip:        5.0
+  cls_e2e_filters: 8
+  cls_e2n_filters: 16
+  cls_fc_hidden:   64
+  centroids_space: voxel
+  init_scale: 0.1

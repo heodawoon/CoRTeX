@@ -1,0 +1,15 @@
+train:
+  T: 6
+  M: 6
+  lr: 1.5e-4
+  weight_decay: 1.0e-5
+  batch_size: 4
+  epochs: 60
+  prp_dropout: 0.1
+  rsti_dropout: 0.1
+  head_dropout: 0.1
+  grad_clip: 1.0
+  warmup_epochs: 10
+  min_lr_ratio: 0.05
+  early_stop_patience: 10
+  num_workers: 2
